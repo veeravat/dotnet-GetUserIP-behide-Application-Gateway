@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h3>Client IP is: @ViewBag.clientIP</h3>
+    <hr>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Header</th>
+                <th>value</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.Header)
+            {
+                <tr>
+                    <td align="left" scope="row">@item.Key</td>
+                    <td align="left">@item.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <p>Text from lib: @ViewBag.MyText</p>
+</div>
