@@ -27,8 +27,6 @@ namespace getUserIP.Controllers
         public IActionResult Index()
         {
             ViewBag.clientIP = HttpContext.Request.HttpContext.Connection.RemoteIpAddress;
-            var TM = new TuyMoveLib.Class1();
-            ViewBag.MyText = TM.GetText();
             ViewBag.Header = HttpContext.Request.Headers;
             return View();
         }

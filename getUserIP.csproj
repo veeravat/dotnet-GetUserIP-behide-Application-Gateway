@@ -4,8 +4,5 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="TuyMoveLib" Version="1.0.0" />
-  </ItemGroup>
 
 </Project>
